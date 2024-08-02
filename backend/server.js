@@ -13,11 +13,7 @@ const { authenticateAdminLogin } = require("./middlewares/admin");
 
 const politicianroutes = require("./routes/politician");
 
-<<<<<<< HEAD
 const PORT = process.env.PORT || 8001;
-=======
-const PORT = process.env.PORT || 8001;;
->>>>>>> 1bda5f6e2babbda4f64e32c63ea0af6e84445ed4
 
 mongoconnect(process.env.MONGO_URL).then(() => console.log("Database Connected Successfully")).catch((err) => {
     console.log("Error in database connection :", err);
