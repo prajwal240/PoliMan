@@ -12,9 +12,9 @@ const { authenticateAdminLogin } = require("./middlewares/admin");
 
 const politicianroutes = require("./routes/politician");
 
-const PORT = 8001;
+const PORT = process.env.PORT || 8001;;
 
-mongoconnect("mongodb://localhost:27017/poliman").then(() => console.log("Database Connected Successfully")).catch((err) => {
+mongoconnect(process.env.MONGO_URL).then(() => console.log("Database Connected Successfully")).catch((err) => {
     console.log("Error in database connection :", err);
 });
 
