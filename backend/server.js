@@ -15,7 +15,7 @@ const politicianroutes = require("./routes/politician");
 
 const PORT = process.env.PORT || 8001;
 
-mongoconnect(process.env.MONGO_URL).then(() => console.log("Database Connected Successfully")).catch((err) => {
+mongoconnect("mongodb+srv://prajwaldec7:X27mE5fg6O7NF1cE@polimancluster.bf4dqso.mongodb.net/").catch((err) => {
     console.log("Error in database connection :", err);
 });
 
