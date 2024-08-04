@@ -54,11 +54,11 @@ export default function Adminlogin() {
                     <h5 className="card-title" style={{ textAlign: 'center' }}>Login</h5>
                     <form onSubmit={handleLogin}>
                         <div className="mb-3">
-                            <label htmlFor="username" className="form-label">Username</label>
+                            <label htmlFor="username" className="form-label">Username(prajwalkhaire)</label>
                             <input type="text" className="form-control" id='username' name='username' onChange={(e) => setUserName(e.target.value)} value={username} required />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="pass" className="form-label">Password</label>
+                            <label htmlFor="pass" className="form-label">Password(Prajwal#123)</label>
                             <input type="password" className="form-control" id='pass' name='pass' onChange={(e) => setPssword(e.target.value)} value={password} required />
                         </div>
                         <button type="submit" className="btn btn-primary mx-auto" style={{ margin: '0 auto', display: 'block' }}>Login</button>
