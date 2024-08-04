@@ -19,7 +19,7 @@ export default function Adminsearch() {
             const handleapicall = async () => {
                 try {
                     const [word1, word2] = searchmessage.split(",");
-                    const response = await axios.post("http://localhost:8001/work/search", { word1, word2 });
+                    const response = await axios.post(`${BASE_URL}/work/search`, { word1, word2 });
                     if (response.data.message !== "Failed") {
                         setAvailable(true);
                         setInfo(response.data);
