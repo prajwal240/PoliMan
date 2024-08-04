@@ -92,7 +92,8 @@ export default function Adminsearch() {
                     </tbody>
                 </table>
                 <div onClick={(evt) => { evt.preventDefault(); navigate("/adminpoliticians/add") }} className='my-2 mx-auto d-block text-center'><button className='btn btn-primary'>Add</button></div>
-            </div> : <div className='my-3' style={{ margin: "0 auto", textAlign: "center" }}><h3>No Data Found</h3></div>}
+            </div> : <div><div className='my-3' style={{ margin: "0 auto", textAlign: "center" }}><h3>No Data Found</h3></div>
+            <div onClick={(evt) => { evt.preventDefault(); navigate("/adminpoliticians/add") }} className='my-2 mx-auto d-block text-center'><button className='btn btn-primary'>Add</button></div></div>}
         </div>
     )
 }
