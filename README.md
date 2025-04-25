@@ -1,3 +1,40 @@
-  I have created a website which contains two sides , user and admin.It can show information about work done by various politicians in various region. A user can view the work done in their region , by which politician it is done. Also user can search by post or region or both in search bar to view work done in other regions also.Along with it a user has feature to login,signin,update profile and logout as well.
-  Now let's come to admin side.An adin has login facility , whose credentials can directly be stored in database.Admin also has logout feature.An admin can add record of work done by politician , delete any record of politician work , an admin can also delete any user.There is also search bar provided to admin section similar to that of user ; by searching there,record of politician work can be deleted or another politician can be added.
-  At backend , I have used node.js and express.js along with mongodb. Frontend is created usng bootstrap and react.js.
+# Politician Work Tracker Website
+
+This is a full-stack web application that provides two interfaces – one for **users** and another for **admins** – to track and manage the work done by politicians in various regions.
+
+## Application Link : https://poliman.onrender.com/
+
+##  Website Features
+
+###  User Side
+- View political work done in their own region.
+- Search political work by **post**, **region**, or **both**.
+- Authentication:
+  - Login
+  - Sign up
+  - Update profile
+  - Logout
+
+###  Admin Side
+- Admin can log in (credentials stored directly in the database).
+- Authentication:
+  - Login
+  - Logout
+- Manage political records:
+  - Add new political work records.
+  - Delete existing political work records.
+  - Delete any user from the system.
+  - Use the search bar to manage records by **post** or **region**.
+
+##  Tech Stack
+
+###  Backend
+- Node.js
+- Express.js
+- MongoDB
+
+###  Frontend
+- React.js
+- Bootstrap
+
+
